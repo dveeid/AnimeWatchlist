@@ -1,0 +1,120 @@
+.profile-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.profile-pfp-container, .banner {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pfp-container {
+    background-color: #f0f0f0;
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    margin: 20px auto;
+    overflow: hidden;
+    line-height: 165px;
+}
+
+.profile-pfp {
+    margin-top: -2.5px;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.profile-pfp-container:hover::after, .banner:hover::after {
+    content: "CHANGE IMAGE";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+#imageModalContainer {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#imageModal {
+    background: #0f0f0f;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+#previewImage {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imageModalBtnContainer {
+    display: inline-flex;
+    width: 100%;
+}
+
+#uploadButton {
+    width: 50%;
+    height: 50px;
+    background: #f0f0f0;
+    color: #0f0f0f;
+    text-transform: uppercase;
+    font-family: 'Source Code Pro';
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#cancelButton {
+    width: 50%;
+    height: 50px;
+    background: #fc6f6f;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    font-family: 'Source Code Pro';
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.logoutBtn {
+    width: 70%;
+    background: #fc022d;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #f0f0f0;
+    border-radius: 0;
+}

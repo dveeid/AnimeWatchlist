@@ -1,0 +1,139 @@
+body {
+    background-image: url('/static/default/websiteBackground.jpg');
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    color: #f0f0f0;
+    text-align: center;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;  
+    margin: auto;
+    min-height: 100vh;
+}
+
+.navbar {
+    height: 90px;
+    background-color: #0f0f0f;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+}
+
+.nav-btn {
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    padding: 0 20px;
+    line-height: 70px;
+    display: block;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    text-decoration: none;
+}
+
+.nav-btn-active {
+    border-bottom: 5px solid #f0f0f0;
+}
+
+.nav-btn:hover {
+    background-color: #757575;
+    color: #f0f0f0;
+}
+
+.nav-btn-inverse {
+    background-color: #f0f0f0;
+    color: #0f0f0f;
+    text-transform: uppercase;
+    padding: 0 20px;
+    line-height: 70px;
+    display: block;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    text-decoration: none;
+}
+
+.nav-btn-inverse-active {
+    border-bottom: 5px solid #0f0f0f;
+}
+
+.nav-btn-inverse:hover {
+    background-color: #757575;
+    color: #f0f0f0;
+}
+
+.header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.header {
+    background-color: #0f0f0f;
+    box-shadow: 0px 0px 20px 0px #0f0f0f;
+}
+
+@keyframes smoothHover {
+    from {
+        color: #0f0f0f;
+    }
+    to {
+        color: #f0f0f0;
+    }
+}
+
+.error-display {
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 70%;
+    margin: auto;
+    background: #0f0f0f;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+/* NEW */
+.user-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+.user-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+    padding: 85px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    width: 200px;
+    height: 170px;
+    font-size: 18px;
+}
+
+.user-box:hover {
+    transform: scale(1.05);
+}
+
+.user-box img {
+    width: 120px !important;
+    height: 120px !important;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 50px;
+}

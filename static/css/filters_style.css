@@ -1,0 +1,179 @@
+.container {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.animeCategory {
+    width: 80%;
+    background: #0f0f0f;
+    padding: 50px;
+    padding-bottom: 100px;
+    box-shadow: 0px 0px 10px 1px black;
+    margin: auto;
+    margin-top: 50px !important;
+}
+
+.animeCategoryTitle {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+
+.animeItem {
+    width: 70%;
+    margin: auto;
+    background-color: #0f0f0f;
+    padding: 25px;
+    padding-left: 40px;
+    text-transform: uppercase;
+    list-style: none;
+    box-shadow: 0px 5px 20px 0px black;
+    margin-bottom: 50px;
+}
+
+.col {
+    width: 200px;
+}
+
+.col img {
+    height: inherit;
+}
+
+.carousel-caption {
+    position: inherit !important;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.carousel-item {
+    height: 325px !important;
+}
+
+
+.carousel-item .col {
+    flex: 0 0 12.5%; /* Each item takes 12.5% of the carousel width, fitting 8 items per slide */
+    max-width: 12.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+}
+
+.carousel-item img {
+    height: 300px !important;
+    object-fit: cover;
+    max-height: 300px !important;
+}
+
+.carousel-item a {
+    color: inherit;  /* Ensures text color is not changed */
+    text-decoration: none;  /* Removes underline from links */
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10px; /* Positioned at the bottom within the container */
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff; /* Ensure caption is visible */
+    text-shadow: 0 0 10px #000; /* Text shadow for better readability */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Prevent text from overflowing */
+}
+
+.carousel-caption h5 {
+    margin: 0;
+    padding: 0 10px; /* Padding to prevent text touching the edges */
+    font-size: 1rem; /* Appropriate font size for the space */
+}
+
+#popularCarousel {
+    width: 95%;
+    margin: auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    top: 365px !important;
+}
+
+.carousel-indicators {
+    top: 350px !important;
+}
+
+.carousel-indicators li {
+    background-color: #757575; /* White dots */
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%; /* Make them circular */
+}
+
+.carousel-indicators .active {
+    background-color: #f0f0f0; /* Black for active indicator */
+}
+
+.title {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px; /* Adjust this value to change the vertical position */
+}
+
+.categoryItem {
+    height: auto;
+    padding: 0;
+    width: 80%;
+    margin: 10px auto;
+    background: #0f0f0f;
+    list-style: none;
+}
+
+.categoryLink {
+    display: block;
+    padding: 25px;
+    color: #f0f0f0;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.categoryLink {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+.categoryLink:hover, .categoryLink:focus {
+    color: #757575;
+    text-decoration: underline;
+}
+
+.categoryLink[aria-expanded="true"] {
+    color: #f0f0f0;
+}
+
+
+.categoryTitle {
+    display: block;
+    color: #f0f0f0;
+    width: 80%;
+    height: auto;
+    background: #0f0f0f;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.categoryTitle h2 {
+    padding: 25px;
+}
+
+.removeListStyle {
+    padding-left: 0px !important;
+}
+
+* {
+    text-transform: uppercase;
+    font-weight: bold;
+}

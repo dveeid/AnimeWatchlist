@@ -1,0 +1,112 @@
+.credentialsContainer {
+    width: 70%;
+    margin: auto;
+    background: #0f0f0f;
+    padding: 50px;
+    text-transform: uppercase;
+    box-shadow: 0px 1px 20px 5px black;
+    margin-top: 50px;
+}
+
+#signup-form {
+    display: none;
+}
+
+.notification {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    border: solid #f0f0f0;
+    box-shadow: 0px 1px 20px 5px black;
+    text-transform: uppercase;
+}
+
+.notification-success {
+    background: #1d9924;    
+}
+
+.notification-error {
+    background: #fe012d;
+}
+
+.loginLoginBtn {
+    width: 50%;
+    height: 50px;
+    background: #f0f0f0;
+    color: #0f0f0f;
+    text-transform: uppercase;
+    font-family: 'Source Code Pro';
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.loginLoginBtn:hover {
+    cursor: pointer;
+}
+
+.loginSignupBtn {
+    width: 50%;
+    height: 50px;
+    background: #0f0f0f;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    font-family: 'Source Code Pro';
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 25px;
+}
+
+.loginSignupBtn:hover {
+    cursor: pointer;
+}
+
+.signupSignupBtn {
+    width: 50%;
+    height: 50px;
+    background: #f0f0f0;
+    color: #0f0f0f;
+    text-transform: uppercase;
+    font-family: 'Source Code Pro';
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.signupSignupBtn:hover {
+    cursor: pointer;
+}
+
+.signupLoginBtn {
+    width: 50%;
+    height: 50px;
+    background: #0f0f0f;
+    color: #f0f0f0;
+    text-transform: uppercase;
+    font-family: 'Source Code Pro';
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 25px;
+}
+
+.signupLoginBtn:hover {
+    cursor: pointer;
+}
+
+#username {
+    font-family: 'Source Code Pro';
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#password {
+    font-family: 'Source Code Pro';
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+

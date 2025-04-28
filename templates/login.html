@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/theme_style.css">
+    <link rel="stylesheet" href="/static/css/login_style.css">
+    <title>Login and Signup</title>
+    <script>
+        function toggleForms() {
+            var loginForm = document.getElementById('login-form');
+            var signupForm = document.getElementById('signup-form');
+            if (loginForm.style.display === 'none') {
+                loginForm.style.display = 'block';
+                signupForm.style.display = 'none';
+            } else {
+                loginForm.style.display = 'none';
+                signupForm.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="website-logo-container">
+            <img src="/static/default/websiteLogo.png" alt="Website Logo"/>
+        </div>
+    </div>
+
+    {% if notification == 'signup_success' %}
+    <div class="notification notification-success">
+        Signup successful! Please log in to access your account.
+    </div>
+    {% endif %}
+
+    {% if notification == 'login_error' %}
+    <div class="notification notification-error">
+        Invalid Username or Password! 
+    </div>
+    {% endif %}
+    
+    
+    
+    <div id="login-form" class="credentialsContainer">
+        <h2>Login</h2>
+        <br><br>
+        <form method="POST" action="/login">
+            <label for="username">Username:</label><br><br>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label><br><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <br><br><br>
+            <button class="loginLoginBtn" type="submit">LOGIN</button>
+            <button class="loginSignupBtn" onclick="toggleForms()">SIGNUP</button>
+        </form>
+    </div>
+
+    <div id="signup-form" class="credentialsContainer">
+        <h2>Signup</h2>
+        <br><br>
+        <form method="POST" action="/signup">
+            <label for="signup-username">Username:</label><br><br>
+            <input type="text" id="signup-username" name="username" required><br><br>
+            <label for="signup-email">Email:</label><br><br>
+            <input type="email" id="signup-email" name="email" required><br><br>
+            <label for="signup-password">Password:</label><br><br>
+            <input type="password" id="signup-password" name="password" required><br><br>
+            <br><br><br>
+            <button class="signupSignupBtn" type="submit">SIGNUP</button>
+            <button class="signupLoginBtn" onclick="toggleForms()">BACK TO LOGIN</button>
+        </form>
+    </div>
+</body>
+</html>

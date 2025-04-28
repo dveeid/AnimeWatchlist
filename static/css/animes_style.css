@@ -1,0 +1,261 @@
+.search-filter-section {
+    height: 250px;
+    background: #0f0f0f;
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+.search-filter-section.active {
+    opacity: 1;
+    height: auto; 
+}
+
+
+.toggle-search {
+    width: 80%;
+    margin: auto;
+    background: #0f0f0f;
+    height: auto;
+    padding: 50px;
+    box-shadow: 0px 0px 10px 1px black;
+    transition: opacity 1s ease-in-out;
+}
+
+.toggle-search-btn {
+    height: 50px;
+    width: 95%;
+    font-weight: bolder;
+    box-shadow: 0px 0px 18px 9px black;
+} 
+
+.search-animes {
+    height: 50px;
+    width: 95%;
+    font-weight: bolder;
+    box-shadow: 0px 0px 18px 9px black;
+    text-align: center;
+    text-transform: uppercase;
+    background: #f0f0f0;
+    color: #0f0f0f;
+}
+
+.search-filter-item {
+    height: 50px;
+    width: 30.333333333%;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    background: #f0f0f0;
+    color: #757575;
+}
+
+.pick-submit {
+    height: 50px;
+    width: 95%;
+    font-size: 0.9rem;
+    font-weight: 900;
+    background-color: #ff0033;
+    color: #f0f0f0;
+    border: none;
+    box-shadow: 0px 0px 8px 0px black;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+
+.pick-submit:hover {
+    background-color: #f0f0f0;
+    color: #0f0f0f;
+}
+
+
+
+.search-submit {
+    height: 50px;
+    width: 95%;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 0px 18px 9px black;
+}
+
+.container {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.animeCategory {
+    width: 80%;
+    background: #0f0f0f;
+    padding: 50px;
+    padding-bottom: 100px;
+    box-shadow: 0px 0px 10px 1px black;
+    margin: auto;
+    margin-top: 50px !important;
+    margin-bottom: 100px;
+}
+
+.animeCategoryTitle {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+
+.animeItem {
+    width: 70%;
+    margin: auto;
+    background-color: #0f0f0f;
+    padding: 25px;
+    padding-left: 40px;
+    text-transform: uppercase;
+    list-style: none;
+    box-shadow: 0px 5px 20px 0px black;
+    margin-bottom: 50px;
+}
+
+.col {
+    width: 200px;
+}
+
+.col img {
+    height: inherit;
+}
+
+.carousel-caption {
+    position: inherit !important;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.carousel-item {
+    height: 325px !important;
+}
+
+
+.carousel-item .col {
+    flex: 0 0 12.5%;
+    max-width: 12.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+}
+
+.carousel-item img {
+    height: 300px !important;
+    object-fit: cover;
+    max-height: 300px !important;
+}
+
+.carousel-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 10px #000;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.carousel-caption h5 {
+    margin: 0;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
+#popularCarousel {
+    width: 95%;
+    margin: auto;
+}
+
+.customCarousel {
+    width: 95%;
+    margin: auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    top: 365px !important;
+}
+
+.carousel-indicators {
+    top: 350px !important;
+}
+
+.carousel-indicators li {
+    background-color: #757575;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: #f0f0f0;
+}
+
+.animeDescription {
+    text-transform: uppercase;
+    background-color: #0f0f0f;
+    padding: 50px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.img-fluid {
+    width: 80%;
+    height: auto;
+}
+
+.btn-secondary {
+    color: #f0f0f0;
+    background-color: #0f0f0f;
+    border-color: #f0f0f0;
+    border-radius: 0;
+}
+
+.card-body {
+    background: #0f0f0f;
+    text-transform: uppercase;
+}
+
+.card {
+    border-radius: 0;
+}
+
+.btn {
+    width: 80%;
+    background: #0f0f0f;
+    border-radius: 0;
+    border-color: #f0f0f0;
+    color: #f0f0f0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.rowForList {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.listTitle {   
+    padding: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
